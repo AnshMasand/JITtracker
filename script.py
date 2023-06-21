@@ -42,7 +42,7 @@ diff = pd.concat([df, previous_data]).drop_duplicates(keep=False)
 # Save the current data for future comparison
 df.to_csv('previous_data.csv', index=False)
 
-# Prepare the email
+
 message = MIMEMultipart()
 message['From'] = 'replitclient@example.com'
 message['To'] = 'replitclientemployee@example.com'
